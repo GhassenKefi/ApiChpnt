@@ -2,37 +2,57 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.usersList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+.userCard{
+  width: 30%;
+  margin-bottom:1.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SingleUserCard{
+  width: 33%;
+  margin-bottom: 2.5%;
+  border-radius: 25px;
+  box-shadow: 0px 10px 10px 1px #c2c2c2;
+}
+.SingleUserCard>img{
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SingleUserLayout{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.navbar{
+  margin-bottom: 2.5%;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.PostCard{
+  width: 30%;
+  margin-bottom: 1.5%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 1px #ebebeb;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+.PostList{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px 1px #c2c2c2;
+  border-radius: 25px;
+  padding: 1.5%;
+
+}
+.footer{
+  margin-top: 2.5%;
+  margin-bottom: 1.5%;
+}
+.footer>a{text-decoration: none;color: #0000008c;}
